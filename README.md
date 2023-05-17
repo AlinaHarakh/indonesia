@@ -32,4 +32,4 @@
   </li>
 </ul>
 <br>
-<!-- <img src="https://github.com/AlinaHarakh/public-images/raw/main/storm.jpg"> -->
+<img src="https://github.com/AlinaHarakh/public-images/raw/main/QWERy.jpg">
