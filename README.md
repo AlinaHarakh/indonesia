@@ -1,4 +1,4 @@
-<h1>IndonesiaT</h1>
+<h1>Indonesia</h1>
 <br>
 <p>Landing page development</p>
 <a href="https://alinaharakh.github.io/indonesia/"><strong>WEBSITE LINK</strong></a>
