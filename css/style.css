@@ -10,6 +10,7 @@ a {
 }
 body {
 	color: #fff;
+	background-color: #000;
 	font-size: 18px;
 	line-height: 32px;
 	font-family: 'Open Sans', sans-serif;
@@ -56,7 +57,7 @@ body {
 	background-image: url(../images/header_bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center -260px;
 }
 .header {
 	padding: 40px 0 400px;
@@ -265,7 +266,6 @@ body {
 	transform: translate(-188px, 6px) rotate(0deg);
 }
 .article {
-	background-color: #000;
 	padding-bottom: 227px;
 }
 .article__inner {
@@ -616,7 +616,16 @@ left: 20px;
 	opacity: .5;
 }
 
+@media(min-width: 1450px) {
+	.header{
+		background-position: center -338px;
+	}
+}
 @media(max-width: 1180px) {
+	.header {
+    padding: 40px 0 140px;
+		background-position: center -167px;
+	}
 	.article__title,
 	.trips__slider-title,
 	.footer__subscription-title {
@@ -635,9 +644,6 @@ left: 20px;
 	}
 }
 @media(max-width: 1140px) {
-	.header {
-    padding: 40px 0 350px;
-	}
 	.header__utp {
     max-width: 570px;
 	}
@@ -662,6 +668,11 @@ left: 20px;
 	}
 	.footer__top-content {
 		gap: 75px;
+	}
+}
+@media(max-width: 1000px) {
+	.header {
+    background-position: center -113px;
 	}
 }
 @media(max-width: 950px) {
@@ -714,7 +725,7 @@ left: 20px;
 }
 @media(max-width: 800px) {
 	.header {
-    padding: 64px 0 210px;
+    padding: 64px 0 90px;
 	}
 	.header__top {
     margin-bottom: 120px;
@@ -724,6 +735,12 @@ left: 20px;
     display: flex;
     flex-direction: column-reverse;
 		margin-bottom: 90px;
+	}
+	.suptitle {
+		color: #fff;
+	}
+	.suptitle::before {
+		background-color: #fff;
 	}
 	.header__socials {
     position: relative;
@@ -776,7 +793,8 @@ left: 20px;
 }
 @media(max-width: 700px) {
 	.header {
-		padding: 0px 0 210px;
+    padding: 0px 0 75px;
+		background-position: center -130px;
 	}
 	.header__top {
 		align-items: center;
@@ -831,11 +849,20 @@ left: 20px;
 	.article__btn::after {
 		display: none;
 	}
+	.trips__slider-city,
+	.trips__slider-title,
+	.trips__slider-text {
+		backdrop-filter: brightness(0.5);
+	}
+	.trips__slider-city {
+		color: #fff;
+	}
+	.trips__slider-city::before,
+	.trips__slider-city::after {
+		background-color: #fff;
+	}
 }
 @media(max-width: 600px) {
-	.header {
-    padding: 0px 0 150px;
-	}
 	.suptitle,
 	.article__suptitle {
 		font-size: 16px;
